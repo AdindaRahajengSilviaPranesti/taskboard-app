@@ -1,27 +1,82 @@
-# TaskboardApp
+# TaskBoard Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+TaskBoard adalah aplikasi Kanban Board berbasis Angular yang dibuat sebagai Front End Developer Take Home Test.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Authentication (Login & Register)
+- Route Guard
+- Kanban Board
+- Add Ticket
+- Edit Ticket
+- Delete Ticket
+- Drag & Drop Ticket
+- Update Ticket Status (PATCH API)
+- Loading Spinner
+- Snackbar Notification
+- Responsive UI
+- Angular Material UI
 
-## Code scaffolding
+## Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular 18
+- Angular Material
+- Angular CDK Drag & Drop
+- TypeScript
+- RxJS
+- JSON Server
+- NgRx (Store Structure)
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Clone repository
+- bash: git clone <repository-url>
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Install dependencies
+- bash: npm install
 
-## Running end-to-end tests
+Run JSON Server
+- bash: npx json-server api/db.json --port 3000
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Run Angular
+- bash: ng serve
 
-## Further help
+Open browser: http://localhost:4200
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Demo Account ##
+
+Admin
+Email : admin@taskboard.com
+Password : admin123
+
+Member
+Email: budi@taskboard.com
+Password: budi123
+
+
+## Project Structure
+src/app
+│
+├── core
+│   ├── guards
+│   ├── models
+│   └── services
+│
+├── features
+│   ├── auth
+│   ├── board
+│   └── ticket
+│
+├── store
+│
+└── shared
+
+## Notes
+
+This project uses JSON Server as mock REST API.
+
+The application focuses on frontend implementation including CRUD operations, Drag & Drop interaction, Angular Material components, and responsive interface.
+
+## ARSP - 18-6-2026 ##

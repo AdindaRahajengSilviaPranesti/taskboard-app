@@ -1,0 +1,213 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin User",
+      "email": "admin@taskboard.com",
+      "password": "admin123",
+      "avatar": "AU",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Budi Santoso",
+      "email": "budi@taskboard.com",
+      "password": "budi123",
+      "avatar": "BS",
+      "role": "member"
+    },
+    {
+      "id": "3",
+      "name": "Siti Rahayu",
+      "email": "siti@taskboard.com",
+      "password": "siti123",
+      "avatar": "SR",
+      "role": "member"
+    },
+    {
+      "id": "4",
+      "name": "Andi Wijaya",
+      "email": "andi@taskboard.com",
+      "password": "andi123",
+      "avatar": "AW",
+      "role": "member"
+    },
+    {
+      "name": "Dwi Nur Cahyo",
+      "email": "dwinuray.dev@gmail.com",
+      "password": "asdasdasd",
+      "id": "XCO9m1e07m4"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "1",
+      "title": "Setup project structure dan routing",
+      "description": "Inisialisasi project Angular, setup routing, dan konfigurasi Angular Material serta NgRx store.",
+      "status": "done",
+      "priority": "high",
+      "assigneeId": 2,
+      "createdAt": "2024-01-10T08:00:00.000Z",
+      "updatedAt": "2024-01-11T10:00:00.000Z",
+      "order": 1
+    },
+    {
+      "id": "2",
+      "title": "Implementasi halaman login dan register",
+      "description": "Buat form login dan register dengan validasi Angular Reactive Forms. Simpan sesi ke localStorage.",
+      "status": "done",
+      "priority": "high",
+      "assigneeId": 2,
+      "createdAt": "2024-01-11T09:00:00.000Z",
+      "updatedAt": "2024-01-12T14:00:00.000Z",
+      "order": 1
+    },
+    {
+      "id": "3",
+      "title": "Desain komponen Kanban Board",
+      "description": "Buat layout Kanban dengan 3 kolom: To Do, In Progress, Done. Gunakan Angular Material Card untuk setiap ticket.",
+      "status": "todo",
+      "priority": "high",
+      "assigneeId": 3,
+      "createdAt": "2024-01-12T08:30:00.000Z",
+      "updatedAt": "2026-06-18T12:56:33.220Z",
+      "order": 1
+    },
+    {
+      "id": "4",
+      "title": "Integrasi drag & drop antar kolom",
+      "description": "Gunakan Angular CDK DragDropModule untuk memindahkan ticket antar kolom. Update status via PATCH API saat drop.",
+      "status": "in-progress",
+      "priority": "high",
+      "assigneeId": 3,
+      "createdAt": "2024-01-12T10:00:00.000Z",
+      "updatedAt": "2024-01-13T10:00:00.000Z",
+      "order": 2
+    },
+    {
+      "id": "5",
+      "title": "Buat NgRx store untuk tickets",
+      "description": "Setup NgRx dengan Actions, Reducers, Selectors, dan Effects. Effects menangani HTTP calls ke JSON Server.",
+      "status": "in-progress",
+      "priority": "medium",
+      "assigneeId": 4,
+      "createdAt": "2024-01-13T08:00:00.000Z",
+      "updatedAt": "2024-01-13T08:00:00.000Z",
+      "order": 3
+    },
+    {
+      "id": "6",
+      "title": "Modal ticket",
+      "description": "Buat Angular Material Dialog untuk menampilkan detail ticket. Sertakan tombol Edit dan Delete di dalam modal.",
+      "status": "todo",
+      "priority": "medium",
+      "assigneeId": 3,
+      "createdAt": "2024-01-13T09:00:00.000Z",
+      "updatedAt": "2026-06-18T12:02:27.063Z",
+      "order": 1
+    },
+    {
+      "id": "7",
+      "title": "Form tambah dan edit ticket",
+      "description": "Buat form dengan Reactive Forms untuk input judul, deskripsi, prioritas, dan assignee. Validasi semua field wajib.",
+      "status": "in-progress",
+      "priority": "medium",
+      "assigneeId": 4,
+      "createdAt": "2024-01-13T10:00:00.000Z",
+      "updatedAt": "2026-06-18T12:27:40.280Z",
+      "order": 2
+    },
+    {
+      "id": "8",
+      "title": "Error handling dan loading state",
+      "description": "Tambahkan loading spinner saat fetch data, dan Snackbar notifikasi untuk success/error API calls.",
+      "status": "todo",
+      "priority": "low",
+      "assigneeId": 2,
+      "createdAt": "2024-01-13T11:00:00.000Z",
+      "updatedAt": "2024-01-13T11:00:00.000Z",
+      "order": 3
+    },
+    {
+      "id": "9",
+      "title": "Polishing UI dan responsiveness",
+      "description": "Pastikan tampilan rapi di berbagai ukuran layar. Gunakan Angular Material theming untuk konsistensi warna.",
+      "status": "todo",
+      "priority": "low",
+      "assigneeId": 4,
+      "createdAt": "2024-01-13T12:00:00.000Z",
+      "updatedAt": "2024-01-13T12:00:00.000Z",
+      "order": 4
+    },
+    {
+      "title": "Test",
+      "description": "Ini deksripsi",
+      "priority": "Medium",
+      "status": "In Progress",
+      "assigneeId": "3",
+      "createdAt": "2026-06-10T06:42:24.377Z",
+      "id": "Sz3-dfY6Poo"
+    },
+    {
+      "title": "Test edit",
+      "description": "Okee in progress edit",
+      "priority": "High",
+      "status": "In Progress",
+      "assigneeId": "4",
+      "createdAt": "2026-06-10T06:43:00.176Z",
+      "id": "7atLh28B77w"
+    },
+    {
+      "title": "Oke",
+      "description": "med",
+      "priority": "Low",
+      "status": "In Progress",
+      "assigneeId": "1",
+      "createdAt": "2026-06-10T06:55:21.681Z",
+      "id": "mPEtaMUnza0"
+    },
+    {
+      "title": "BUG - Pagination",
+      "description": "",
+      "priority": "Low",
+      "status": "Done",
+      "assigneeId": "2",
+      "createdAt": "2026-06-12T13:55:36.655Z",
+      "id": "euXlUqPIjKM"
+    },
+    {
+      "title": "uji coba 2",
+      "description": "kerjain yuk",
+      "priority": "high",
+      "status": "todo",
+      "assigneeId": 2,
+      "createdAt": "2026-06-18T09:13:48.916Z",
+      "updatedAt": "2026-06-18T09:13:48.916Z",
+      "order": 1,
+      "id": "umUBG-bfxbM"
+    },
+    {
+      "title": "uji coba 3",
+      "description": "yuk kerjain",
+      "priority": "medium",
+      "status": "todo",
+      "assigneeId": 2,
+      "createdAt": "2026-06-18T09:16:37.196Z",
+      "updatedAt": "2026-06-18T09:16:37.196Z",
+      "order": 1,
+      "id": "l4H-MjfiYhM"
+    },
+    {
+      "title": "uji 4",
+      "description": "dfsdgfs",
+      "priority": "medium",
+      "status": "todo",
+      "assigneeId": 4,
+      "updatedAt": "2026-06-18T12:57:04.424Z",
+      "createdAt": "2026-06-18T12:57:04.424Z",
+      "order": 1,
+      "id": "6bXV3hO6v_E"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

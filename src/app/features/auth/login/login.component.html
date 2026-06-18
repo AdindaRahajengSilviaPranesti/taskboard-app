@@ -1,0 +1,72 @@
+<div class="login-page">
+
+<mat-card>
+
+<h1>TaskBoard</h1>
+
+<p>Welcome Back 👋</p>
+
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+
+<mat-form-field appearance="outline">
+
+<mat-label>Email</mat-label>
+
+<input
+matInput
+formControlName="email">
+
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+
+<mat-label>Password</mat-label>
+
+<input
+matInput
+formControlName="password"
+[type]="hidePassword ? 'password':'text'">
+
+<button
+mat-icon-button
+matSuffix
+type="button"
+(click)="hidePassword=!hidePassword">
+
+<mat-icon>
+
+{{hidePassword?'visibility':'visibility_off'}}
+
+</mat-icon>
+
+</button>
+
+</mat-form-field>
+
+<button
+mat-raised-button
+color="primary"
+type="submit"
+class="login-btn">
+
+Login
+
+</button>
+
+</form>
+
+<div class="register">
+
+Belum punya akun?
+
+<a routerLink="/register">
+
+Register
+
+</a>
+
+</div>
+
+</mat-card>
+
+</div>

@@ -1,0 +1,64 @@
+<div class="login-page">
+
+<mat-card>
+
+<h1>Create Account</h1>
+
+<form [formGroup]="form" (ngSubmit)="register()">
+
+<mat-form-field appearance="outline">
+<input matInput placeholder="Nama"
+formControlName="name">
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+<input matInput placeholder="Email"
+formControlName="email">
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+
+<input
+matInput
+[type]="hide?'password':'text'"
+placeholder="Password"
+formControlName="password">
+
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+
+<input
+matInput
+[type]="hide?'password':'text'"
+placeholder="Confirm Password"
+formControlName="confirm">
+
+</mat-form-field>
+
+<button
+mat-raised-button
+color="primary"
+class="login-btn">
+
+Register
+
+</button>
+
+</form>
+
+<div class="register">
+
+Sudah punya akun?
+
+<a routerLink="/login">
+
+Login
+
+</a>
+
+</div>
+
+</mat-card>
+
+</div>

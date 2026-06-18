@@ -1,0 +1,185 @@
+mat-toolbar {
+
+    background: #4F46E5 !important;
+
+    color: white;
+
+}
+
+.spacer {
+    flex: 1;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.board {
+
+    padding: 24px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    background: #f5f7fb;
+
+    height: calc(100vh - 64px);
+
+}
+
+.column {
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 16px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+
+
+}
+
+.column h2 {
+
+    margin-bottom: 15px;
+
+    color: #484C7F;
+
+}
+
+.ticket {
+
+    margin-bottom: 14px;
+
+    padding: 16px;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.ticket:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .12);
+
+}
+
+.ticket-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+
+}
+
+.priority {
+
+    padding: 4px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: white;
+
+    text-transform: uppercase;
+
+}
+
+.high {
+
+    background: #E53935;
+
+}
+
+.medium {
+
+    background: #FB8C00;
+
+}
+
+.low {
+
+    background: #43A047;
+
+}
+
+
+.ticket h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.ticket p {
+    font-size: 13px;
+    color: #666;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+
+
+.action-bar {
+
+    padding: 20px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    background: #f5f7fb;
+
+    margin-right: 15px;
+
+}
+
+.cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
+}
+
+.cdk-drag-placeholder {
+    opacity: .3;
+}
+
+.cdk-drop-list-dragging .ticket {
+    transition: transform .2s;
+}
+
+.loading-container {
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.loading-container p {
+    color: #666;
+    font-size: 16px;
+}

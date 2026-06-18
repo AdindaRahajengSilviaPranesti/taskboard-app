@@ -1,0 +1,109 @@
+<h2 mat-dialog-title>
+
+    Ticket
+
+</h2>
+
+<div mat-dialog-content>
+
+    <form [formGroup]="form">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Title</mat-label>
+            <input matInput formControlName="title">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Description</mat-label>
+            <textarea matInput formControlName="description">
+        </textarea>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Priority</mat-label>
+
+            <mat-select formControlName="priority">
+
+                <mat-option value="low">
+                    Low
+                </mat-option>
+
+                <mat-option value="medium">
+                    Medium
+                </mat-option>
+
+                <mat-option value="high">
+                    High
+                </mat-option>
+
+            </mat-select>
+
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+
+            <mat-label>Status</mat-label>
+
+            <mat-select formControlName="status">
+
+                <mat-option value="todo">
+                    To Do
+                </mat-option>
+
+                <mat-option value="in-progress">
+                    In Progress
+                </mat-option>
+
+                <mat-option value="done">
+                    Done
+                </mat-option>
+
+            </mat-select>
+
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+
+            <mat-label>Assignee</mat-label>
+
+            <mat-select formControlName="assigneeId">
+
+                <mat-option [value]="1">
+                    Admin
+                </mat-option>
+
+                <mat-option [value]="2">
+                    Budi Santoso
+                </mat-option>
+
+                <mat-option [value]="3">
+                    Siti Rahayu
+                </mat-option>
+
+                <mat-option [value]="4">
+                    Andi Wijaya
+                </mat-option>
+
+            </mat-select>
+
+        </mat-form-field>
+
+    </form>
+
+</div>
+
+<div mat-dialog-actions>
+
+    <button mat-button mat-dialog-close>
+
+        Cancel
+
+    </button>
+
+    <button mat-raised-button color="primary" (click)="save()">
+
+        Save
+
+    </button>
+
+</div>
