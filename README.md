@@ -1,6 +1,6 @@
 # TaskBoard Application
 
-TaskBoard adalah aplikasi Kanban Board berbasis Angular yang dibuat sebagai Front End Developer Take Home Test.
+TaskBoard adalah aplikasi Kanban Board berbasis Angular.
 
 ## Features
 
